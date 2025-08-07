@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Button</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    const rootApp = document.getElementById("root");
+
+    rootApp.innerHTML = '<button id="toggleBtn">ON</button>';
+
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    toggleBtn.addEventListener("click", function () {
+      if (toggleBtn.textContent === "ON") {
+        toggleBtn.textContent = "OFF";
+      } else {
+        toggleBtn.textContent = "ON";
+      }
+    });
+  </script>
+</body>
+</html>
